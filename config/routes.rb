@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "static#index" 
   resources :users do
     member do
       post :data_new

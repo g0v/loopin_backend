@@ -10,7 +10,7 @@ class UserController < ApplicationController
     end
   end
   def data_new
-    data = Data.new
+    data = Raw.new
     begin
       unless User.where( :uid => params[:uid]).empty?
       data.uid = params[:uid]

@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108114847) do
+ActiveRecord::Schema.define(version: 20151110111942) do
 
-  create_table "datas", force: :cascade do |t|
+  create_table "raws", force: :cascade do |t|
     t.datetime "date",                   null: false
     t.string   "uid",        limit: 255, null: false
     t.float    "delta_x",    limit: 24,  null: false
